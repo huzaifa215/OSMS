@@ -57,7 +57,7 @@
 
   <div class="container">
     <!--Introduction Section-->
-    <div class="jumbotron">
+    <div class="jumbotron" id="Services">
       <h3 class="text-center">OSMS Services</h3>
       <p>
         OSMS Services is India’s leading chain of multi-brand Electronics and Electrical service
@@ -102,7 +102,7 @@
   </div> <!-- End Services -->
 
 <!-- start registertion form -->
-<div class="container pt-5">
+<div class="container pt-5" id="registration">
     <h2 class="text-center">Create an Account</h2>
     <div class="row mt-4 mb-4">
 <div class="col-md-6 offset-md-3">
@@ -245,7 +245,7 @@
         Jharkhand - 834005 <br>
         Phone: +00000000 <br>
         <a href="#" target="_blank">www.osms.com</a> <br>
-
+<!-- 2nd colum and 2nd row -->
         <br><br>
         <strong>Delhi Branch:</strong> <br>
         OSMS Pvt Ltd, <br>
@@ -258,6 +258,8 @@
   </div> <!-- End Contact Us Container-->
   <!-- End Contact Us -->
 
+
+
   <!-- Start Footer-->
   <footer class="container-fluid bg-dark text-white mt-5" style="border-top: 3px solid #DC3545;">
     <div class="container">
@@ -267,8 +269,8 @@
         <div class="col-md-6">
           <!-- Start Footer 1st Column -->
           <span class="pr-2">Follow Us: </span>
-          <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/?sk=welcome" target="_blank" class="pr-2 fi-color"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/watch?v=2W5c7EBuemA&list=PLbGui_ZYuhijEPI__8WaEjZzXhkh85hH7&index=7" target="_blank" class="pr-2 fi-color"><i class="fab fa-twitter"></i></a>
           <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-youtube"></i></a>
           <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-google-plus-g"></i></a>
           <a href="#" target="_blank" class="pr-2 fi-color"><i class="fas fa-rss"></i></a>
@@ -276,7 +278,7 @@
 
         <div class="col-md-6 text-right">
           <!-- Start Footer 2nd Column -->
-          <small> Designed by Someone &copy; 2018.
+          <small> Designed by huzaifa Khalid ; 2018.
           </small>
           <small class="ml-2"><a href="Admin/login.php">Admin Login</a></small>
         </div> <!-- End Footer 2nd Column -->
