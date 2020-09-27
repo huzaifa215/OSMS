@@ -136,13 +136,15 @@
 
     </div>
 </div>
-<!-- end start registertaion form-->
+<!-- end registertaion form-->
 
 
 
   <!-- Start Registration  -->
   <?php include('userRegistration.php') ?>
   <!-- End Registration  -->
+
+  
 
   <!-- Start Happy Customer  -->
   <div class="jumbotron bg-danger" id="Customer">
@@ -156,7 +158,7 @@
           <div class="card shadow-lg mb-2">
             <div class="card-body text-center">
               <img src="images/avtar1.jpeg" class="img-fluid" style="border-radius: 100px;">
-              <h4 class="card-title">Rahul Kumar</h4>
+              <h4 class="card-title">Khuram </h4>
               <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, ad
                 ducimus voluptas
                 nesciunt debitis numquam.</p>
@@ -169,7 +171,7 @@
           <div class="card shadow-lg mb-2">
             <div class="card-body text-center">
               <img src="images/avtar2.jpeg" class="img-fluid" style="border-radius: 100px;">
-              <h4 class="card-title">Sonam Sharma</h4>
+              <h4 class="card-title">Nabel</h4>
               <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, ad
                 ducimus voluptas
                 nesciunt debitis numquam.</p>
@@ -182,7 +184,7 @@
           <div class="card shadow-lg mb-2">
             <div class="card-body text-center">
               <img src="images/avtar3.jpeg" class="img-fluid" style="border-radius: 100px;">
-              <h4 class="card-title">Sumit Vyas</h4>
+              <h4 class="card-title">Muneeb</h4>
               <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, ad
                 ducimus voluptas
                 nesciunt debitis numquam.</p>
@@ -195,7 +197,7 @@
           <div class="card shadow-lg mb-2">
             <div class="card-body text-center">
               <img src="images/avtar4.jpeg" class="img-fluid" style="border-radius: 100px;">
-              <h4 class="card-title">Jyoti Sinha</h4>
+              <h4 class="card-title">Haya</h4>
               <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, ad
                 ducimus voluptas
                 nesciunt debitis numquam.</p>
