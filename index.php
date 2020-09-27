@@ -208,18 +208,37 @@
     </div> <!-- End Customer Container -->
   </div> <!-- End Customer Jumbotron -->
 
+
   <!--Start Contact Us-->
   <div class="container" id="Contact">
     <!--Start Contact Us Container-->
     <h2 class="text-center mb-4">Contact US</h2> <!-- Contact Us Heading -->
     <div class="row">
+        <!-- start 1 culoam -->
+        <div class="col-md-8" >
+            <form action="" method ="POST">
+<input type="text" class="form-control" name="name" placeholder="Name">
+<br>
+<input type="text" class="form-control" name="subject" placeholder="Subject">
+<br>
+<input type="email" class="form-control" name="email" placeholder="Email">
+<br>
 
-      <!--Start Contact Us Row-->
-      <?php include('contactform.php'); ?>
+<textarea class="form-control" name="message" placeholder="How can we help you ?" style="height:150px";></textarea>
+<br>
+<input type="submit " class="btn btn-primary" value="Send" name="submit"><br><br>
+            </form>
+
+        </div>
+        <!-- end Contact from -->
+
+      <!-- Start Contact Us Row-->
+     <?//php include('contactform.php'); ?>
       <!-- End Contact Us 1st Column -->
 
+
+<!-- Start Contact Us 2nd Column-->
       <div class="col-md-4 text-center">
-        <!-- Start Contact Us 2nd Column-->
         <strong>Headquarter:</strong> <br>
         OSMS Pvt Ltd, <br>
         Sec IV, Bokaro <br>
@@ -265,7 +284,7 @@
     </div> <!-- End Footer Container -->
   </footer> <!-- End Footer -->
 
-  <!-- Boostrap JavaScript -->
+  <!-- Boostrap JavaScript responsive-->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
