@@ -1,27 +1,3 @@
-<?php
-include('../dbConnection.php');
-session_start();
-if(!isset($_SESSION['is_login'])){
-  if(isset($_REQUEST['rEmail'])){
-    $rEmail = mysqli_real_escape_string($conn,trim($_REQUEST['rEmail']));
-    $rPassword = mysqli_real_escape_string($conn,trim($_REQUEST['rPassword']));
-    $sql = "SELECT r_email, r_password FROM requesterlogin_tb WHERE r_email='".$rEmail."' AND r_password='".$rPassword."' limit 1";
-    $result = $conn->query($sql);
-    if($result->num_rows == 1){
-      
-      $_SESSION['is_login'] = true;
-      $_SESSION['rEmail'] = $rEmail;
-      // Redirecting to RequesterProfile page on Correct Email and Pass
-      echo "<script> location.href='RequesterProfile.php'; </script>";
-      exit;
-    } else {
-      $msg = '<div class="alert alert-warning mt-2" role="alert"> Enter Valid Email and Password </div>';
-    }
-  }
-} else {
-  echo "<script> location.href='RequesterProfile.php'; </script>";
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,7 +44,7 @@ if(!isset($_SESSION['is_login'])){
             <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">Password</label><input type="password"
               class="form-control" placeholder="Password" name="rPassword">
           </div>
-          <button type="submit" class="btn btn-outline-danger mt-3 btn-block shadow-sm font-weight-bold">Login</button>
+          <button type="submit" class="btn btn-outline-danger mt-4 btn-block shadow-sm font-weight-bold">Login</button>
           <?php if(isset($msg)) {echo $msg; } ?>
         </form>
         <div class="text-center"><a class="btn btn-info mt-3 shadow-sm font-weight-bold" href="../index.php">Back
