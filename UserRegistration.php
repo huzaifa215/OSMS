@@ -7,12 +7,12 @@
      $regmsg = '<div class="alert alert-danger mt-2" role="alert"> All Fields are Required </div>';
     // $regmsg="All feilds are requires";
     } else {
-    //   $sql = "SELECT r_email FROM requesterlogin_tb WHERE r_email='".$_REQUEST['rEmail']."'";
-    //   $result = $conn->query($sql);
-    //   if($result->num_rows == 1){
-    //     $regmsg = '<div class="alert alert-warning mt-2" role="alert"> Email ID Already Registered </div>';
-    //   } else {
-    //     // Assigning User Values to Variable
+      $sql = "SELECT r_email FROM requesterlogin_tb WHERE r_email='".$_REQUEST['rEmail']."'";
+      $result = $conn->query($sql);
+      if($result->num_rows == 1){
+        $regmsg = '<div class="alert alert-warning mt-2" role="alert"> Email ID Already Registered </div>';
+      } else {
+        // Assigning User Values to Variable
         $rName = $_REQUEST['rName'];
         $rEmail = $_REQUEST['rEmail'];
         $rPassword = $_REQUEST['rPassword'];
@@ -24,7 +24,7 @@
         }
       }
     }
- // }
+ }
 ?>
 
 
@@ -61,7 +61,7 @@
  <em style="font-size:10px;">Note: By clicking sign up you agree our term and conditions</em>
  <?php if(isset($regmsg)){
      echo $regmsg;
- }
+ } 
  ?>
 </form>
 </div>
