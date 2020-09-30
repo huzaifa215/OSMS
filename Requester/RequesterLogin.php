@@ -8,7 +8,6 @@ if(!isset($_SESSION['is_login'])){
     $sql = "SELECT r_email, r_password FROM requesterlogin_tb WHERE r_email='".$rEmail."' AND r_password='".$rPassword."' limit 1";
     $result = $conn->query($sql);
     if($result->num_rows == 1){
-      
       $_SESSION['is_login'] = true;
       $_SESSION['rEmail'] = $rEmail;
       // Redirecting to RequesterProfile page on Correct Email and Pass
