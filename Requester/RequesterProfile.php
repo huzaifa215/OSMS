@@ -63,17 +63,20 @@
 </nav>
 <!-- side bar -->
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">col-sm-8</div>
-    <div class="col-sm-4">col-sm-4</div>
+    <div class="col-sm-2 bg-light sidebar">
+      <div><ul class="nav flex-colum"><li class="nac-item"><a class="nav-link href="RequesterProfile.php"><i class="fas fa-user"></i>Profile</a></li>
+
+      </ul>
+    
+    </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-sm">col-sm</div>
-    <div class="col-sm">col-sm</div>
-    <div class="col-sm">col-sm</div>
+
+  
   </div>
-</div>
+
 
 
 <div class="col-sm-6 mt-5">
