@@ -8,7 +8,8 @@
     // $regmsg="All feilds are requires";
     } else {
       $sql = "SELECT r_email FROM requesterlogin_tb WHERE r_email='".$_REQUEST['rEmail']."'";
-      $result = $conn->query($sql);
+      $result = $conn->query("SELECT r_email FROM requesterlogin_tb WHERE r_email='".$_REQUEST['rEmail']."'");
+      // $result = $conn->query($sql);
       if($result->num_rows == 1){
         $regmsg = '<div class="alert alert-warning mt-2" role="alert"> Email ID Already Registered </div>';
       } else {
