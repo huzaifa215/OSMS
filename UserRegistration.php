@@ -1,5 +1,5 @@
 <?php
-  include('dbConnection.php');
+  include('./dbConnection.php');
 
   if(isset($_REQUEST['rSignup'])){
     // Checking for Empty Fields
