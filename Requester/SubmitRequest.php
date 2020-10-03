@@ -1,6 +1,10 @@
 <?php  include('include/header.php')?>
 
+
+<!-- form designing -->
+<center>
 <div class="col-sm-9 col-md-10 mt-5">
+  
   <form class="mx-5" action="" method="POST">
     <div class="form-group">
       <label for="inputRequestInfo">Request Info</label>
@@ -12,7 +16,7 @@
     </div>
     <div class="form-group">
       <label for="inputName">Name</label>
-      <input type="text" class="form-control" id="inputName" placeholder="Rahul" name="requestername">
+      <input type="text" class="form-control" id="inputName" placeholder="Huzaifa" name="requestername">
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
@@ -21,7 +25,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="inputAddress2">Address Line 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Railway Colony" name="requesteradd2">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Sodiwal Colony" name="requesteradd2">
       </div>
     </div>
     <div class="form-row">
@@ -55,13 +59,15 @@
     </div>
 
     <button type="submit" class="btn btn-danger" name="submitrequest">Submit</button>
-    <button type="reset" class="btn btn-secondary">Reset</button>
+    <button type="reset" class="btn btn-secondary ml-2">Reset</button>
   </form>
   <!-- below msg display if required fill missing or form submitted success or failed -->
   <?php if(isset($msg)) {echo $msg; } ?>
 </div>
 </div>
 </div>
+</center>
+
 <!-- Only Number for input fields -->
 <script>
   function isInputNumber(evt) {
